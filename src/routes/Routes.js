@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
-// import Logement from '../pages/Logement/Logement';
+import Logement from '../pages/Logement/Logement';
 import NotFound from '../pages/NotFound/NotFound';
 
 import Banner from '../components/Banner/Banner';
@@ -30,7 +30,7 @@ const AppRoutes = () => {
         </>
       }/>
 
-      {/* <Route path="/logement/:id" element={<Logement />} /> */}
+      <Route path="/logement/:id" element={<Logement/>} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

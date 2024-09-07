@@ -1,0 +1,61 @@
+.fiche-logement{
+   color: $color-items;
+   .carousel {
+      width: 100%;
+      position: relative;
+      img {
+         height: 415px;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 25px;
+      }
+      .carousel-button {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         color: rgb(255, 255, 255);
+         border: none;
+         background-color: transparent;
+         font-size: 120px;
+         cursor: pointer;
+         &.left {
+            left: 20px;
+         }
+         &.right {
+            right: 20px;
+         }
+      }
+   }
+   .fiche-logement-info {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      .fiche-logement-info-title {
+         h1{
+            color: $color-items;
+            font-size: 36px;
+            font-weight: 500;
+         }
+         p {
+            color : black;
+            font-size: 18px;
+            font-weight: 500;
+         }
+      }
+      .fiche-logement-info-host {
+         margin-left: auto;
+         display: flex;
+         align-items: center;
+         text-align: right;
+         img {
+            border-radius: 50%;
+            height: 64px;
+         }
+         p {
+            font-size: 18px;
+            margin-right: 10px;
+            width: 80px;         
+         }
+      }
+   }
+}

@@ -19,10 +19,12 @@ const Banner = ({ routeData }) => {
   const { image, alt, text } = bannerData[routeData.pathname] || {};
 
   return (
-    <div className='banner'>
-      <img src={image} alt={alt} />
-      <p>{text}</p>
-    </div>
+    <section className='banner-container'>
+      <div className='banner'>
+        <img src={image} alt={alt} />
+        <p>{text}</p>
+      </div>
+    </section>
   );
 };
 

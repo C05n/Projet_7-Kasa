@@ -1,9 +1,10 @@
-@import 'mixins';
-@import 'reset';
 @import 'variables';
+@import 'mixins';
+@import 'styles';;
 
 @import '../components/Header/Header';
 @import '../components/Banner/Banner';
 @import '../components/Cards/Cards';
+@import '../components/Fiche_logement/Fiche_logement';
 
 @import '../components/Footer/Footer';

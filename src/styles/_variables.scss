@@ -4,16 +4,3 @@ $color-header-link: #000000;
 $color-card-div: #F6F6F6;
 $color-footer: #000000;
 $color-items: #FF6060;
-
-* {
-   font-family: 'Montserrat', sans-serif;
-}
-body {
-   max-width: 1440px;
-   margin: 0 auto;
-   padding: 0 5%;
-}
-a {
-   text-decoration: none;
-   color: $color-header-link;
-}

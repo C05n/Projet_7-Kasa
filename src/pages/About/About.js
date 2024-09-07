@@ -1,9 +1,6 @@
 function About() {
    return (
-        <div className="App">
-          <main>
-          </main>
-        </div>
+      <div>About</div>
     );
 }
 export default About;
