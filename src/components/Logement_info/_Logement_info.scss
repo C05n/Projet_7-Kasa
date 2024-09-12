@@ -1,0 +1,57 @@
+.fiche-logement-title-host {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   .fiche-logement-info-title {
+      h1 {
+         color: $color-items;
+         font-size: 36px;
+         font-weight: 500;
+      }
+      p {
+         color: black;
+         font-size: 18px;
+         font-weight: 500;
+      }
+   }
+   .fiche-logement-info-host {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      img {
+         border-radius: 50%;
+         height: 64px;
+      }
+      p {
+         font-size: 18px;
+         margin-right: 10px;
+         width: 80px;
+      }
+   }
+}
+.fiche-logement-tags-rating {
+   display: flex;
+   align-items: baseline;
+   margin-top: 20px;
+   .logement-tags {
+      height: 30px;
+      .logement-tag {
+         background-color: $color-items;
+         color: white;
+         text-align: center;
+         display: inline-block;
+         padding: 4px 25px;
+         border-radius: 10px;
+         margin-right: 10px;
+         font-size: 14px;
+      }
+   }
+   .logement-rating {
+      margin-left: auto;
+
+      .logement-star {
+         margin-left: 8px;
+      }
+   }
+}

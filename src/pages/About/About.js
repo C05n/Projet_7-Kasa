@@ -1,6 +1,8 @@
+import AboutDropdown from '../../components/About_dropdown/About_dropdown';
+
 function About() {
    return (
-      <div>About</div>
-    );
+      <AboutDropdown />
+   )
 }
 export default About;

@@ -1,0 +1,35 @@
+.fiche-logement-Description-Equipments {
+   margin-top: 10px;
+   .logement-dropdown {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      font-size: 18px;
+      &.descrition {
+         margin-right: 10%;
+      }
+      h3{
+      background-color: $color-items;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 20px ;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      }
+      .dropdown-arrow {
+         transition: transform 0.3s ease;
+      }
+      .rotate {
+         transform: rotate(-180deg);
+      }
+   }
+   p, ul {
+      background-color: $color-card-div;
+      color: black;
+      width: 100%;
+      list-style: none;
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+   }
+}
