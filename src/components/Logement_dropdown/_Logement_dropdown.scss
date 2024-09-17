@@ -1,12 +1,19 @@
 .fiche-logement-Description-Equipments {
-   margin-top: 10px;
+   margin-top: 15px;
    .logement-dropdown {
       display: inline-block;
       vertical-align: top;
-      width: 45%;
+      width: 100%;
       font-size: 18px;
+      overflow: hidden;
+      @media (min-width: 780px) {
+         width: 45%;
+      }
       &.descrition {
-         margin-right: 10%;
+         
+         @media (min-width: 780px) {
+            margin-right: 10%;
+         }
       }
       h3{
       background-color: $color-items;
@@ -16,6 +23,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      
       }
       .dropdown-arrow {
          transition: transform 0.3s ease;
@@ -25,11 +33,13 @@
       }
    }
    p, ul {
+      overflow: hidden;
+      position: relative;
       background-color: $color-card-div;
       color: black;
-      width: 100%;
       list-style: none;
-      padding: 20px;
       border-radius: 0 0 10px 10px;
+      z-index: -1;
+      margin-bottom: 20px;
    }
 }

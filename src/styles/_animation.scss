@@ -1,0 +1,33 @@
+.dropdown-arrow {
+   transition: transform 0.3s ease;
+   cursor: pointer;
+}
+.dropdown-arrow.open {
+   transform: rotate(-180deg);
+}
+
+.dropdown-text {
+   transition: all 0.3s linear;
+   padding: 0 20px;
+   top: -50px;
+   max-height: 0;
+}
+.dropdown-text.open {
+   transition: all 0.3s linear;
+   padding: 20px;
+   top: 0;
+   max-height: 600px;
+}
+
+.logement_dropdown-text {
+   transition: all 0.3s linear;
+   padding: 0 20px;
+   top: -85px;
+   max-height: 0;
+}
+.logement_dropdown-text.open {
+   transition: all 0.3s linear;
+   padding: 20px;
+   top: 0;
+   max-height: 600px;
+}

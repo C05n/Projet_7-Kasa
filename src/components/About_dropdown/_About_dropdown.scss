@@ -1,5 +1,6 @@
 .dropdown {
-   padding: 10px 8%;
+   padding: 0 8%;
+   overflow: hidden;
    h3{
       background-color: $color-items;
       color: white;
@@ -9,14 +10,16 @@
       align-items: center;
       justify-content: space-between;
       font-size: 24px;
+      z-index: 2;
    }
    p {
       background-color: $color-card-div;
       color: black;
       width: 100%;
       list-style: none;
-      padding: 20px;
       border-radius: 0 0 10px 10px;
       font-size: 18px;
+      z-index: -1;
+      position: relative;
    }
 }

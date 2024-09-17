@@ -12,22 +12,22 @@ function LogementInfo() {
 
    return (
       <div className="fiche-logement-info">
-         <div className="fiche-logement-title-host">
+         <div className="fiche-logement-title-tags">
             <div className='fiche-logement-info-title'>
                <h1>{logement.title}</h1>
                <p>{logement.location}</p>
             </div>
 
-            <div className='fiche-logement-info-host'>
-               <p>{logement.host.name}</p>
-               <img src={logement.host.picture} alt={logement.host.name} className="fiche-logement-host-img" />
-            </div>
-         </div>
-         <div className="fiche-logement-tags-rating">
             <div className="logement-tags">
                {logement.tags.map((tag, index) => (
                   <span key={index} className="logement-tag">{tag}</span>
                ))}
+            </div>
+         </div>
+         <div className="fiche-logement-host-rating">
+         <div className='fiche-logement-info-host'>
+               <p>{logement.host.name}</p>
+               <img src={logement.host.picture} alt={logement.host.name} className="fiche-logement-host-img" />
             </div>
 
             <div className='logement-rating'>

@@ -14,25 +14,23 @@ function LogementDropdown() {
    return (
       <div className='fiche-logement-Description-Equipments'>
          <div className="logement-dropdown descrition">
-            <h3 onClick={() => setShowDescription(!showDescription)}>
+            <h3>
                Description
-               <img src={dropdownArrow} alt="flèche" className={`dropdown-arrow ${showDescription ? 'rotate' : ''}`} />
+               <img src={dropdownArrow} alt="flèche" className={`dropdown-arrow ${showDescription ? 'open' : ''}`}onClick={() => setShowDescription(!showDescription)}/>
             </h3>
-            {showDescription && <p>{logement.description}</p>}
+            <p className={`logement_dropdown-text ${showDescription ? 'open' : ''}`}>{logement.description}</p>
          </div>
 
          <div className="logement-dropdown">
-            <h3 onClick={() => setShowEquipments(!showEquipments)}>
+            <h3>
                Équipements
-               <img src={dropdownArrow} alt="flèche" className={`dropdown-arrow ${showEquipments ? 'rotate' : ''}`} />
+               <img src={dropdownArrow} alt="flèche" className={`dropdown-arrow ${showEquipments ? 'open' : ''}`} onClick={() => setShowEquipments(!showEquipments)}/>
             </h3>
-            {showEquipments && (
-               <ul>
+            <ul className={`logement_dropdown-text ${showEquipments ? 'open' : ''}`}>
                   {logement.equipments.map((equipment, index) => (
                      <li key={index}>{equipment}</li>
                   ))}
-               </ul>
-            )}
+            </ul>
          </div>
       </div>
    )
