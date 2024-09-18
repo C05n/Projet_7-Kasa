@@ -4,3 +4,23 @@
    align-items: center;
    justify-content: center;
 }
+
+@mixin dropdown-title($font-size) {
+   background-color: $color-items;
+   color: white;
+   border-radius: 10px;
+   padding: 10px 20px ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: $font-size;
+}
+
+@mixin dropdown-text {
+   background-color: $color-card-div;
+   color: black;
+   border-radius: 0 0 10px 10px;
+   list-style: none;
+   z-index: -1;
+   position: relative;
+}

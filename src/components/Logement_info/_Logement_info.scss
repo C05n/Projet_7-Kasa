@@ -2,15 +2,9 @@
    margin-top: 20px;
    display: flex;
    flex-direction: column;
-   @media (min-width: 780px) {
-      flex-direction: row;
-   }
    .fiche-logement-title-tags {
       display: flex;
       flex-direction: column;
-      @media  (min-width: 780px) {
-         width: calc(100% - 165px);
-      }
       .fiche-logement-info-title {
          margin-bottom: 20px;
          h1 {
@@ -39,17 +33,11 @@
          }
       }
    }
-
    .fiche-logement-host-rating {
       display: flex;
       flex-direction: row-reverse;
       width: 100%;
       margin-top: 15px;
-      @media (min-width: 780px) {
-         flex-direction: column;
-         width: fit-content;
-         margin-top: 0;
-      }
       .fiche-logement-info-host {
          margin-left: auto;
          display: flex;
@@ -57,10 +45,6 @@
          align-self: flex-start;
          text-align: right;
          margin-bottom: 20px;
-         @media (min-width: 780px) {
-            position: initial;
-            align-self: flex-start;
-         }
          img {
             border-radius: 50%;
             height: 64px;
@@ -74,13 +58,29 @@
       .logement-rating {
          margin-top: 20px;
          margin-bottom: 20px;
-         @media (min-width: 780px) {
+         .logement-star {
+            margin-left: 8px;
+         }
+      }
+   }
+   /*** Media Queries ***/
+   @media (min-width: 780px) {
+      flex-direction: row;
+      .fiche-logement-title-tags {
+         width: calc(100% - 165px);
+      }
+      .fiche-logement-host-rating {
+         flex-direction: column;
+         width: fit-content;
+         margin-top: 0;
+         .fiche-logement-info-host {
+            position: initial;
+            align-self: flex-start;
+         }
+         .logement-rating {
             margin-left: auto;
             margin-top: 0;
             margin-bottom: 0;
-         }
-         .logement-star {
-            margin-left: 8px;
          }
       }
    }

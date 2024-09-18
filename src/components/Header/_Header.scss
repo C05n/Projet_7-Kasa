@@ -21,6 +21,9 @@
          cursor: pointer;
       }
    }
+   .active {
+      text-decoration: underline;
+   }
    /*** Media Queries ***/  
    @media (min-width: 780px) {
       margin-top: 50px;

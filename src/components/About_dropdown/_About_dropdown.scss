@@ -2,24 +2,10 @@
    padding: 0 8%;
    overflow: hidden;
    h3{
-      background-color: $color-items;
-      color: white;
-      border-radius: 5px;
-      padding: 10px 20px ;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 24px;
-      z-index: 2;
+      @include dropdown-title(24px); 
    }
    p {
-      background-color: $color-card-div;
-      color: black;
-      width: 100%;
-      list-style: none;
-      border-radius: 0 0 10px 10px;
+      @include dropdown-text;
       font-size: 18px;
-      z-index: -1;
-      position: relative;
    }
 }

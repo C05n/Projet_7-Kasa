@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import logements from '../../assets/data/logements.json';
+import dataLogement from '../../assets/data/logements.json';
 import arrowLeft from '../../assets/images/arrowLeft.svg';
 import arrowRight from '../../assets/images/arrowRight.svg';
 
 function LogementCarousel() {
    const params = useParams();
    const logementId = params.id;
-   const logement = logements.find(logement => logement.id === logementId);
+   const logement = dataLogement.find(logement => logement.id === logementId);
    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
    const handlePrevImage = () => {

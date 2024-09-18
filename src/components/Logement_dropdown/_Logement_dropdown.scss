@@ -6,24 +6,8 @@
       width: 100%;
       font-size: 18px;
       overflow: hidden;
-      @media (min-width: 780px) {
-         width: 45%;
-      }
-      &.descrition {
-         
-         @media (min-width: 780px) {
-            margin-right: 10%;
-         }
-      }
       h3{
-      background-color: $color-items;
-      color: white;
-      border-radius: 10px;
-      padding: 10px 20px ;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      
+      @include dropdown-title(18px);
       }
       .dropdown-arrow {
          transition: transform 0.3s ease;
@@ -33,13 +17,17 @@
       }
    }
    p, ul {
+      @include dropdown-text;
       overflow: hidden;
-      position: relative;
-      background-color: $color-card-div;
-      color: black;
-      list-style: none;
-      border-radius: 0 0 10px 10px;
-      z-index: -1;
       margin-bottom: 20px;
+   }
+   /*** Media Queries ***/
+   @media (min-width: 780px) {
+      .logement-dropdown {
+         width: 45%;
+         &.descrition {
+            margin-right: 10%;
+         }
+      }
    }
 }

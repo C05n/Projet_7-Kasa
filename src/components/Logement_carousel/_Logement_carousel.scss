@@ -15,8 +15,8 @@
       border: none;
       background-color: transparent;
       img {
-      height: 80px; 
-      cursor: pointer;
+         height: 80px;
+         cursor: pointer;
       }
       &.left {
          left: 20px;
@@ -27,6 +27,9 @@
    }
    .carousel-counter {
       display: none;
+   }
+   /*** Media Queries ***/
+   .carousel-counter {
       @media (min-width: 780px) {
          display: block;
          position: absolute;

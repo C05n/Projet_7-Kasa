@@ -1,10 +1,9 @@
+import Not_Found from "../../components/Not_Found/Not_Found";
+
 function NotFound() {
    return (
-      <div className="not-found">
-         <h1>404</h1>
-      </div>
+      <Not_Found/>
    );
-
 }
 
 export default NotFound
