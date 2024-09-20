@@ -30,6 +30,7 @@
          color: white; 
          font-size: 18px;
          z-index: 1;
+         padding-right: 10px;
        }
    }
    /*** Media Queries ***/  
@@ -37,6 +38,7 @@
       grid-template-columns: repeat(2, 1fr);
       padding: 60px;
       background-color: $color-card-div;
+      gap: 40px;
    }
    @media (min-width: 1000px) {
       grid-template-columns: repeat(3, 1fr);

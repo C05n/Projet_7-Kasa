@@ -1,0 +1,38 @@
+.dropdown {
+   padding: 0 8%;
+   overflow: hidden;
+   margin-top: 30px;
+   h3 {
+      @include dropdown-title(24px);
+   }
+   p {
+      @include dropdown-text;
+      font-size: 18px;
+   }
+   &.logement-dropdown {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      padding: 0;
+      &.description {
+         margin-top: 15px;
+      }
+      h3 {
+         @include dropdown-title(18px);
+      }
+      p, ul {
+         overflow: hidden;
+         margin-bottom: 20px;
+      }
+   }
+   /*** Media Queries ***/
+   @media (min-width: 780px) {
+      &.logement-dropdown {
+         width: 47.5%;
+         margin-top: 15px;
+         &.description {
+            margin-right: 5%;
+         }
+      }
+   }
+}

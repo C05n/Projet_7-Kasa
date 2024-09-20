@@ -15,7 +15,7 @@
       border: none;
       background-color: transparent;
       img {
-         height: 80px;
+         height: 40px;
          cursor: pointer;
       }
       &.left {
@@ -29,8 +29,8 @@
       display: none;
    }
    /*** Media Queries ***/
-   .carousel-counter {
-      @media (min-width: 780px) {
+   @media (min-width: 780px) {
+      .carousel-counter {
          display: block;
          position: absolute;
          bottom: 20px;
@@ -38,6 +38,11 @@
          right: 50%;
          font-size: 18px;
          color: white;
+      }
+      .carousel-button {
+         img {
+            height: 80px;
+         }
       }
    }
 }
